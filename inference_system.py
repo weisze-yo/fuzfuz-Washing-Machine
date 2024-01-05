@@ -16,9 +16,9 @@ class FuzzyWashSystem:
         #Default Defuzzification
         
         return (
-            self.simulation.output['wash_time'],
-            self.simulation.output['water_temperature'],
-            self.simulation.output['agitation_intensity']
+            round(self.simulation.output['wash_time'],2),
+            round(self.simulation.output['water_temperature'],2),
+            round(self.simulation.output['agitation_intensity'],2)
         )
         
     
