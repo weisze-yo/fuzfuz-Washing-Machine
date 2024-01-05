@@ -4,12 +4,15 @@ from collections import namedtuple
 from membership_function import MF
 from input_output_variables import ranges, Variable, LinguisticVariable
 
+from collections import namedtuple
+
 T = namedtuple("Variable", ['name', 'term'])
 
 class Rule:
-    def __init__(self, IF, THEN):
+     def __init__(self, IF, THEN):
         self.IF = IF
         self.THEN = THEN
+
 
 rules = [
     # fabric_type = delicate
